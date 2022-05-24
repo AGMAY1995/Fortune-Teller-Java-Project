@@ -1,2 +1,209 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import java.util.Scanner;
+
+
+public class Project1 {
+    public static void main(String[] args) {
+        //starting scanner
+        Scanner keyBoard = new Scanner (System.in);
+        //getting the first value 
+        System.out.println("Enter first value(1-10): ");
+        int first_val = keyBoard.nextInt();
+        //getting second value
+        System.out.println("Enter character(A-I): ");
+        char character = (keyBoard.next()).charAt(0);;
+        //getting third value
+        System.out.println("Enter second value(1-11): ");
+        int second_val = keyBoard.nextInt();
+        //checking the any of the entries were invalid
+        if (0 > first_val || first_val > 10) {
+            System.out.println("Sorry here's your change.");
+        }
+        else if (0 > second_val || second_val > 11) {
+            System.out.println("Sorry here's your change.");
+        }
+        else if (character != 'A' && character != 'B' && character != 'C' && character != 'D' && character != 'E'&& character != 'F'&& character != 'G'&&character != 'H'&&character != 'I') {
+            System.out.println("Sorry here's your change.");
+        }
+        //checking what the output will be
+        else {
+            //output for first value entered
+            //initiating string varibles
+            String first_expression = "";
+            String first_final_expression = "";
+            String fortune1 = "";
+            //validating the first entry 
+            if (first_val == 1) {
+                first_expression = ":-J";
+                first_final_expression = first_expression;
+                fortune1 = "Your tongue in your cheek";
+            }
+            else if (first_val == 2) {
+                first_expression = ":-&";
+                first_final_expression = first_expression;
+                fortune1 = "Your tongue is tied";
+            }
+            else if (first_val == 3) {
+                first_expression = "=^_^=";
+                first_final_expression = first_expression;
+                fortune1 = "You are blushing";
+            }
+            else if (first_val == 4) {
+                first_expression = ":-o";
+                first_final_expression = first_expression;
+                fortune1 = "You are alarmed";
+            }
+            else if (first_val == 5) {
+                first_expression = "=-D";
+                first_final_expression = first_expression;
+                fortune1 = "You are laughing out loud";
+            }
+            else if (first_val == 6) {
+                first_expression = ">_<";
+                first_final_expression = first_expression;
+                fortune1 = "You are angry";
+            }
+            else if (first_val == 7) {
+                first_expression = "(*_*)";
+                first_final_expression = first_expression;
+                fortune1 = "You are in love";
+            }
+            else if (first_val == 8) {
+                first_expression = "(-_-)";
+                first_final_expression = first_expression;
+                fortune1 = "You are bored";
+            }
+            else if (first_val == 9) {
+                first_expression = ">_<*";
+                first_final_expression = first_expression;
+                fortune1 = "You are annoyed";
+            }
+            else if (first_val == 10) {
+                first_expression = "(*^_^*)";
+                first_final_expression = first_expression;
+                fortune1 = "You are shy";
+            }
+            //output for second entered value
+            //initiating string varibles
+            String second_expression = "";
+            String fortune2 = "";
+            String second_final_expression = "";
+            //validating what the value was 
+            if (character == 'A') {
+                second_expression = " *<:) ";
+                second_final_expression = second_expression;
+                fortune2 = " wearing a birthday hat and ";
+            }
+            else if (character == 'B') {
+                second_expression = " 0_ ";
+                second_final_expression = second_expression;
+                fortune2 = " are in bed ";
+            }
+            else if (character == 'C') {
+                second_expression = " @~)~~~~ ";
+                second_final_expression = second_expression;
+                fortune2 = " have a rose ";
+            }
+            else if (character == 'D') {
+                second_expression = " *[___] ";
+                second_final_expression = second_expression;
+                fortune2 = " in a boat ";
+            }
+            else if (character == 'E') {
+                second_expression = " -|–‘ ";
+                second_final_expression = second_expression;
+                fortune2 = " in an airplane ";
+            }
+            else if (character == 'F') {
+                second_expression = " *<<<<= ";
+                second_final_expression = second_expression;
+                fortune2 = " have a christmas tree ";
+            }
+            else if (character == 'G') {
+                second_expression = " 8[+] ";
+                second_final_expression = second_expression;
+                fortune2 = " have presents ";
+            }
+            else if (character == 'H') {
+                second_expression = " ~D ";
+                second_final_expression = second_expression;
+                fortune2 = " drinking coffee ";
+            }
+            else if (character == 'I') {
+                second_expression = " (*)/(*) ";
+                second_final_expression = second_expression;
+                fortune2 = " riding a bicycle ";
+            }
+            //output for third value entered
+            //initiating string varibles
+            String last_expression = "";
+            String three_final_expression = "";
+            String fortune3 = "";
+            //validating what the entry was 
+            if (second_val == 1) {
+                last_expression = "(*V*)";
+                three_final_expression = last_expression;
+                fortune3 = " with a bird.";
+            }
+            else if (second_val == 2) {
+                last_expression = "=^.^=";
+                three_final_expression = last_expression;
+                fortune3 = "with a cat.";
+            }
+            else if (second_val == 3) {
+                last_expression = ":o3";
+                three_final_expression = last_expression;
+                fortune3 = " with a dog";
+            }
+            else if (second_val == 4) {
+                last_expression = "<><";
+                three_final_expression = last_expression;
+                fortune3 = "with a fish";
+            }
+            else if (second_val == 5) {
+                last_expression = "<:3)~";
+                three_final_expression = last_expression;
+                fortune3 = "with a mouse";
+            }
+            else if (second_val == 6) {
+                last_expression = "=8)";
+                three_final_expression = last_expression;
+                fortune3 = " with a pig";
+            }
+            else if (second_val == 7) {
+                last_expression = ":(III)-";
+                three_final_expression = last_expression;
+                fortune3 = "with a bee";
+            }
+            else if (second_val == 8) {
+                last_expression = "^o,o^";
+                three_final_expression = last_expression;
+                fortune3 = "with an owl";
+            }
+            else if (second_val == 9) {
+                last_expression = "( *)>";
+                three_final_expression = last_expression;
+                fortune3 = "with a penguin";
+            }
+            else if (first_val == 10) {
+                last_expression = "(‘.’)";
+                three_final_expression = last_expression;
+                fortune3 = "with a rabbit";
+            }
+            else if (first_val == 11) {
+                last_expression = "_@_v";
+                three_final_expression = last_expression;
+                fortune3 = "with a snail";
+            }
+            //the final fortune 
+            String fortune = fortune1 + fortune2 +fortune3;
+            //final expression
+            String final_expression = first_final_expression + second_final_expression + three_final_expression;
+            //outputting final expression
+            System.out.println(final_expression);
+            //outputting final fortune
+            System.out.println(fortune);
+        }
+        //closing the scanner
+        keyBoard.close();
+    }
+}
